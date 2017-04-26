@@ -1,0 +1,26 @@
+{
+  "name": "dgg-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lonelyWalkor/dgg-node.git"
+  },
+  "keywords": [],
+  "author": "zhanghong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lonelyWalkor/dgg-node/issues"
+  },
+  "homepage": "https://github.com/lonelyWalkor/dgg-node#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "kafka-node": "^1.6.0"
+  }
+}
