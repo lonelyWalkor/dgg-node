@@ -1,1 +1,1 @@
-# dgg-node
+# zh-node
