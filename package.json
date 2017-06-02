@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --display-modules --display-chunks --config config/webpack.config.js",
+    "dev": "npm run build && node dgg-node.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,59 @@
     "url": "https://github.com/lonelyWalkor/dgg-node/issues"
   },
   "homepage": "https://github.com/lonelyWalkor/dgg-node#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "axios": "^0.16.1",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-runtime": "^6.18.0",
+    "coffee-loader": "^0.7.3",
+    "cson": "^4.1.0",
+    "css-loader": "^0.25.0",
+    "debug": "^2.2.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "hjson": "^2.4.2",
+    "html-webpack-plugin": "^2.24.1",
+    "json-loader": "^0.5.4",
+    "properties": "^1.2.1",
+    "toml": "^2.3.2",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.13.1",
+    "x2js": "^3.1.1",
+    "after": "0.8.2",
+    "eslint": "3.19.0",
+    "nyc": "10.2.0",
+    "seedrandom": "2.4.3",
+    "timezone-mock": "0.0.0",
+    "urun": "0.0.8",
+    "utest": "0.0.8"
+  },
   "dependencies": {
+    "bignumber.js": "3.1.2",
     "body-parser": "^1.17.1",
+    "config": "^1.25.1",
+    "connect-redis": "^3.2.0",
+    "cookie-parser": "^1.4.3",
+    "dnode": "^1.2.2",
     "express": "^4.15.2",
-    "kafka-node": "^1.6.0"
+    "express-session": "^1.15.2",
+    "js-to-java": "^2.4.0",
+    "kafka-node": "^1.6.0",
+    "kamote": "0.0.2",
+    "log4js": "^1.1.1",
+    "mysql": "^2.13.0",
+    "node-zookeeper-dubbo": "^2.1.7",
+    "readable-stream": "1.1.14",
+    "redis": "^2.7.1",
+    "request": "^2.81.0",
+    "safe-buffer": "5.0.1",
+    "sqlstring": "2.2.0"
   }
 }
